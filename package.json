@@ -1,0 +1,26 @@
+{
+  "name": "crt-screen",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json -d",
+    "sandbox": "webpack",
+    "sandbox:watch": "webpack --watch",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/grinova/crt-screen"
+  },
+  "author": "Aleksandr Kuzmin",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {}
+}
